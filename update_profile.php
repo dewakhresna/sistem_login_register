@@ -105,16 +105,16 @@ if(isset($_POST['update_profile'])){
             <span>Jenis Kelamin :</span>
             <select name="update_jenis_kelamin" value="<?php echo $fetch['jenis_kelamin']; ?>" class="box">
                <option value="Masukan Jenis Kelamin">Masukan Jenis Kelamin</option>
-               <option value="Laki-laki">laki-laki</option>
-               <option value="Perempuan">Perempuan</option>
+               <option value="Laki-laki" <?php if("Laki-laki") { echo "selected";} ?>>Laki-laki</option>
+               <option value="Perempuan" <?php if("Perempuan") { echo "selected";} ?>>Perempuan</option>
             </select>
             <span>Email :</span>
             <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
             <span>Posisi :</span>
             <select name="update_posisi" value="<?php echo $fetch['posisi']; ?>" class="box">
                <option value="Masukan Posisi">Masukan Posisi</option>
-               <option value="Asisten">Asisten</option>
-               <option value="Programmer">Programmer</option>
+               <option value="Asisten" <?php if("Asisten") { echo "selected";} ?>>Asisten</option>
+               <option value="Programmer" <?php if("Programmer") { echo "selected";} ?>>Programmer</option>
             </select>
             <span>IPK Terakhir :</span>
             <input type="text" name="update_ipk" value="<?php echo $fetch['ipk']; ?>" class="box">

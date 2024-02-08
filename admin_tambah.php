@@ -36,16 +36,16 @@ $isi_data=mysqli_fetch_array($sql);
             <span>Jenis Kelamin :</span>
             <select name="jenis_kelamin" value="<?php echo $isi_data['jenis_kelamin']; ?>" class="box">
                <option value="Masukan Jenis Kelamin">Masukan Jenis Kelamin</option>
-               <option value="Laki-laki">laki-laki</option>
-               <option value="Perempuan">Perempuan</option>
+               <option value="Laki-laki" <?php if("Laki-laki") { echo "selected";} ?>>Laki-laki</option>
+               <option value="Perempuan" <?php if("Perempuan") { echo "selected";} ?>>Perempuan</option>
             </select>
             <span>Email :</span>
             <input type="email" name="email" value="<?php echo $isi_data['email']; ?>" class="box">
             <span>Posisi :</span>
             <select name="posisi" value="<?php echo $isi_data['posisi']; ?>" class="box">
                <option value="Masukan Posisi">Masukan Posisi</option>
-               <option value="Asisten">Asisten</option>
-               <option value="Programmer">Programmer</option>
+               <option value="Asisten" <?php if("Asisten") { echo "selected";} ?>>Asisten</option>
+               <option value="Programmer" <?php if("Programmer") { echo "selected";} ?>>Programmer</option>
             </select>
          </div>
          <div class="inputBox">
